@@ -11,6 +11,8 @@ Each source code also contains a main function to call the Fibonacci function 20
 * Scala
 * Javascript
 
+---
+
 ### Python
 ```python
 # Implementation of function to get the n-st number of a Fibonnaci sequence in Python 
@@ -92,6 +94,43 @@ class Fibonnaci {
         for (int i = 0; i <= 20; i++) {
             System.out.println("index - " + i + "\t value = " + fibo(i));
         }
+    }
+}
+```
+
+### Scala
+```scala
+// Implementation of function to get the n-st number of a Fibonnaci sequence in Scala
+
+def fibo(n: Int): Int = n match {
+    case 0 | 1 => n
+    case _ => fibo(n-1) + fibo(n-2)
+}
+
+def main() {
+    println("Fibonacci Sequence\n")
+    for (i <- 0 to 20) {
+        println("index - " + i + "\t value = " + fibo(i))
+    }   
+}
+```
+
+### JavaScript
+```javascript
+// Implementation of function to get the n-st number of a Fibonnaci sequence in JavaScript
+
+function fibo(n){
+    if (n <= 1) {
+        return n;
+    } else {
+        return (fibo(n-1) + fibo(n-2));
+    }
+}
+
+function main() {
+    console.log("Fibonacci Sequence\n")
+    for (i = 0; i <= 20; i++) {
+        console.log("index - " + i + "\t value = " + fibo(i));
     }
 }
 ```
