@@ -136,4 +136,4 @@ function main() {
 ```
 ---
 ### Expected Output
-![output image](output.png)
+![output image](output.PNG)
